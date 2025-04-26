@@ -1,4 +1,9 @@
-﻿# Smart Manufacturing Quality Dashboard 🚀
+# Smart Manufacturing Quality Dashboard
+
+![Build Status](https://github.com/josmyrose/smart_quality_dashboard/actions/workflows/python-app.yml/badge.svg)
+
+ 
+ # Smart Manufacturing Quality Dashboard 🚀
 
 ## Objective
 A Python + SQL application designed to analyze manufacturing sensor data, detect anomalies, predict quality issues, and assist engineers in improving product quality.
