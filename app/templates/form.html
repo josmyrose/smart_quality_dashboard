@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Defect Prediction UI</title>
+</head>
+<body>
+    <h2>Predict Manufacturing Defect</h2>
+    <form action="/submit" method="POST">
+        <label for="temperature">Temperature:</label><br>
+        <input type="number" step="0.01" name="temperature" required><br><br>
+
+        <label for="vibration">Vibration:</label><br>
+        <input type="number" step="0.001" name="vibration" required><br><br>
+
+        <label for="pressure">Pressure:</label><br>
+        <input type="number" step="0.01" name="pressure" required><br><br>
+
+        <label for="speed">Speed:</label><br>
+        <input type="number" name="speed" required><br><br>
+
+        <input type="submit" value="Predict Defect Probability">
+    </form>
+
+    {% if prediction is defined %}
+    <h3>Predicted Defect Probability: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
