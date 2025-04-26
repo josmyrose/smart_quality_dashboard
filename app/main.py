@@ -17,8 +17,6 @@ try:
 except FileNotFoundError as e:
     print(f"Error loading sensor data: {e}")
     sensor_data = None
-# Train model
-train_model(sensor_data, defect_data)
 
 # Load trained model
 model = load_model()
@@ -46,4 +44,8 @@ def health():
     return "API is running!"
 
 if __name__ == '__main__':
+    # Train model 
+    # Only run this when manually running, not when importing in test
+    train_model(sensor_data, defect_data)
+
     app.run(debug=True)
