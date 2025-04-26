@@ -18,7 +18,7 @@ A Python + SQL application designed to analyze manufacturing sensor data, detect
 
 ## Setup
 ```bash
-git clone https://github.com/yourusername/smart_quality_dashboard.git
+git clone https://github.com/josmyrose/smart_quality_dashboard.git
 cd smart_quality_dashboard
 pip install -r requirements.txt
 python app/main.py
